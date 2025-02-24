@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - Adidas</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #000;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            background: #111;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #27ae60;
+        }
+
+        .about-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #111;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .about-image {
+            margin-top: 20px;
+        }
+
+        .about-image img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #111;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="Logo Site II.png" alt="Logo Adidas">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#">Loja</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-container">
+        <h1>Sobre Nós</h1>
+
+        <p>Impreium é uma das marcas esportivas mais icônicas do mundo, conhecida por sua inovação e qualidade em produtos para atletas e amantes do esporte.</p>
+        <p>Desde sua fundação, buscamos unir desempenho, estilo e sustentabilidade em cada produto que criamos.</p>
+        <div class="about-image">
+            <img src="Logo Site.png" alt="Loja Adidas">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Adidas Brasil - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camisa Portugal 22/23 Treino</title>
+    <link rel="stylesheet" href="inter.css">
+    <link rel="icon" type="image/png" href="Fav.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background: #000;
+            color: white;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .product {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            padding: 50px;
+        }
+
+        .product-image {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            max-width: 880px;
+        }
+
+        .product-img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .product-details {
+            max-width: 490px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .price {
+            font-size: 20px;
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        .buy-button {
+            background-color: #000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .buy-button:hover {
+            background-color: #444;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #loja, #contato {
+            padding: 50px;
+            text-align: center;
+            background: white;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="Logo Site II.png" alt="Logo Adidas">
+            </div>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#loja">Loja</a></li>
+                <li><a href="Seleções.html">Seleções</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="product">
+            <div class="product-image">
+                <img src="Portugal Treino 22 I.jpeg" alt="Camisa Adidas" class="product-img">
+                <img src="Portugal Treino 22 II.jpeg" alt="Camisa Adidas" class="product-img">
+                <img src="Portugal Treino 22 III.jpeg" alt="Camisa Adidas" class="product-img">
+                <img src="Portugal Treino 22 IV.jpeg" alt="Camisa Adidas" class="product-img">
+            </div>
+            <div class="product-details">
+                <h1>Camisa Portugal Treino 22/23 24</h1>
+                <p class="price">R$ 169,90 no Pix</p>
+                <p class="description">Grey Two / Active Red.</p>
+                <label for="size">Tamanho:</label>
+                <select id="size">
+                    <option>PP</option>
+                    <option>P</option>
+                    <option>M</option>
+                    <option>G</option>
+                    <option>GG</option>
+                </select>
+                <button class="buy-button" onclick="comprar()">Comprar Agora</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Imperium - Todos os direitos reservados</p>
+    </footer>
+
+    <script>
+        function comprar() {
+            let tamanho = document.getElementById("size").value;
+            alert("Você adicionou a camisa tamanho " + tamanho + " ao carrinho!");
+        }
+    </script>
+
+</body>
+</html>
